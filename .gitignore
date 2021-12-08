@@ -1,0 +1,7 @@
+dist/
+nbpackage/
+
+*.tar.gz
+*.zip
+*.AppImage
+
