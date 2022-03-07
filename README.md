@@ -35,7 +35,7 @@ the Azul provided hash. To use a different JDK, update the configuration file.
 Build the installer by running -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-12.6-bin.zip --config windows-x64-iss/netbeans-windows-x64.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-13-bin.zip --config windows-x64-iss/netbeans-windows-x64.properties --output dist/
 ```
 
 ### Build DEB packages
@@ -50,7 +50,7 @@ downloads and builds a DEB that runs on any architecture with the system JDK.
 Build the package by running eg. -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-12.6-bin.zip --config linux-x64/netbeans-x64-deb.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-13-bin.zip --config linux-x64/netbeans-x64-deb.properties --output dist/
 ```
 
 ### Build AppImages
@@ -69,7 +69,7 @@ hash.
 Build the AppImage by running eg. -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-12.6-bin.zip --config linux-arm32/netbeans-arm-appimage.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-13-bin.zip --config linux-arm32/netbeans-arm-appimage.properties --output dist/
 ```
 
 ## Legal
@@ -88,3 +88,4 @@ registered trademarks of Azul Systems, Inc. BellSoft and Liberica are trademarks
 or registered trademarks of BellSoft Ltd. Java and OpenJDK are registered trademarks
 of Oracle and/or its affiliates. All other trademarks are the property of their
 respective holders and used here only for identification purposes.
+
