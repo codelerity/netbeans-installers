@@ -35,7 +35,23 @@ the Azul provided hash. To use a different JDK, update the configuration file.
 Build the installer by running -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-13-bin.zip --config windows-x64-iss/netbeans-windows-x64.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-14-bin.zip --config windows-x64-iss/netbeans-windows-x64.properties --output dist/
+```
+
+### Build MacOS installer
+
+You will require `swift`, `codesign` and `pkgbuild` installed on the system.
+
+Download the right Azul Zulu JDK into the `macos-x64` directory, checking against the
+Azul provided hash. To use a different JDK, update the configuration file.
+
+Add your Apple developer IDs for code signing and installer signing to the
+configuration file.
+
+Build the installer by running -
+
+```
+./nbpackage/bin/nbpackage --input netbeans-14-bin.zip --config macos-x64/netbeans-macos-x64.properties --output dist/
 ```
 
 ### Build DEB packages
@@ -50,7 +66,7 @@ downloads and builds a DEB that runs on any architecture with the system JDK.
 Build the package by running eg. -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-13-bin.zip --config linux-x64/netbeans-x64-deb.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-14-bin.zip --config linux-x64/netbeans-x64-deb.properties --output dist/
 ```
 
 ### Build AppImages
@@ -69,7 +85,7 @@ hash.
 Build the AppImage by running eg. -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-13-bin.zip --config linux-arm32/netbeans-arm-appimage.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-14-bin.zip --config linux-arm32/netbeans-arm-appimage.properties --output dist/
 ```
 
 ## Legal

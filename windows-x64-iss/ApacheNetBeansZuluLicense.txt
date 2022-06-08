@@ -1,11 +1,11 @@
-This installer installs Apache NetBeans 13 bundled with Azul's Zulu build of OpenJDK 17.
+This installer installs Apache NetBeans 14 bundled with Azul's Zulu build of OpenJDK 18.
 
 Apache NetBeans
 Copyright (c) 2017-2022 The Apache Software Foundation and distributed under the terms of the Apache Software License (below).
 
-Azul Zulu 17.32.13 (17.0.2)
-Copyright (c) 2013-2021, Azul Systems, Inc. 385 Moffett Park Drive, Suite 115, Sunnyvale, CA 94089
-For more information see https://docs.azul.com/core/tpls/october-2021/zulu17_tpl.html
+Azul Zulu 18.30 (18.0.1+10)
+Copyright (c) 2013-2022, Azul Systems, Inc. 385 Moffett Park Drive, Suite 115, Sunnyvale, CA 94089
+For more information see https://docs.azul.com/core/tpls/april-2022/zulu18_tpl.html
 
 ===========================================================
 
@@ -383,6 +383,7 @@ ide/docs/jaxb-api-doc.jar                                             EDL-1.0
 ide/modules/bcpg.jar                                                  MIT-bouncycastle
 ide/modules/bcpkix.jar                                                MIT-bouncycastle
 ide/modules/bcprov.jar                                                MIT-bouncycastle
+ide/modules/bcutil.jar                                                MIT-bouncycastle
 ide/modules/com-google-gson.jar                                       Apache-2.0
 ide/modules/com-google-guava.jar                                      Apache-2.0
 ide/modules/com-googlecode-javaewah-JavaEWAH.jar                      Apache-2.0
@@ -393,11 +394,11 @@ ide/modules/dict/wordlist-en_US-large-2017.08.24.zip                  BSD-SCOWL
 ide/modules/ext/ValidationAPI.jar                                     CDDL-1.0
 ide/modules/ext/adapter-base.jar                                      Apache-2.0
 ide/modules/ext/adapter-javahl.jar                                    Apache-2.0
-ide/modules/ext/antlr-runtime-3.4.jar                                 BSD-antlr-runtime3
+ide/modules/ext/antlr-runtime-3.5.2.jar                               BSD-antlr-runtime3
 ide/modules/ext/antlr4-runtime-4.7.2.jar                              BSD-antlr-runtime4
-ide/modules/ext/commons-compress-1.19.jar                             Apache-2.0
+ide/modules/ext/commons-compress-1.21.jar                             Apache-2.0
 ide/modules/ext/commons-csv-1.8.jar                                   Apache-2.0
-ide/modules/ext/commons-net-3.6.jar                                   Apache-2.0
+ide/modules/ext/commons-net-3.8.0.jar                                 Apache-2.0
 ide/modules/ext/fastexcel-0.10.15.jar                                 Apache-2.0
 ide/modules/ext/flexmark-0.50.36.jar                                  BSD-flexmark
 ide/modules/ext/flexmark-ext-emoji-0.50.36.jar                        BSD-flexmark
@@ -421,15 +422,10 @@ ide/modules/ext/jaxb/jaxb-xjc.jar                                     CDDL-1.1-M
 ide/modules/ext/jcodings-1.0.18.jar                                   MIT-nocopyright
 ide/modules/ext/jing.jar                                              BSD-jing
 ide/modules/ext/joni-2.1.11.jar                                       MIT-jruby
-ide/modules/ext/jsch-agentproxy-core.jar                              BSD-jsch-agentproxy
-ide/modules/ext/jsch-agentproxy-pageant.jar                           BSD-jsch-agentproxy
-ide/modules/ext/jsch-agentproxy-sshagent.jar                          BSD-jsch-agentproxy
-ide/modules/ext/jsch-agentproxy-usocket-jna.jar                       BSD-jsch-agentproxy
 ide/modules/ext/json-simple-1.1.1.jar                                 Apache-2.0
 ide/modules/ext/jsoup-1.11.3.jar                                      MIT-jsoup
-ide/modules/ext/junixsocket-common-2.2.1.jar                          Apache-2.0
-ide/modules/ext/junixsocket-core-2.2.1.jar                            Apache-2.0
-ide/modules/ext/junixsocket-native-common-2.2.1.jar                   Apache-2.0
+ide/modules/ext/junixsocket-common-2.4.0.jar                          Apache-2.0
+ide/modules/ext/junixsocket-native-common-2.4.0.jar                   Apache-2.0
 ide/modules/ext/langdetect.jar                                        Apache-2.0
 ide/modules/ext/launcher-common-20.3.0.jar                            UPL
 ide/modules/ext/log4j-1.2.15.jar                                      Apache-2.0
@@ -482,7 +478,7 @@ ide/modules/org-eclipse-mylyn-wikitext-markdown-core.jar              EPL-v10
 ide/modules/org-eclipse-mylyn-wikitext-textile-core.jar               EPL-v10
 ide/modules/slf4j-api.jar                                             MIT-slf4j
 ide/modules/slf4j-jdk14.jar                                           MIT-slf4j
-java/docs/jaxws-api-doc.zip                                           CDDL-1.1
+java/docs/jaxws-api-doc.zip                                           EDL-1.0
 java/maven/boot/plexus-classworlds-2.6.0.jar                          Apache-2.0
 java/maven/lib/commons-cli-1.4.jar                                    Apache-2.0
 java/maven/lib/commons-io-2.6.jar                                     Apache-2.0
@@ -493,26 +489,26 @@ java/maven/lib/jansi-2.4.0.jar                                        Apache-2.0
 java/maven/lib/javax.annotation-api-1.2.jar                           CDDL-1.1
 java/maven/lib/javax.inject-1.jar                                     Apache-2.0
 java/maven/lib/jcl-over-slf4j-1.7.32.jar                              Apache-2.0
-java/maven/lib/maven-artifact-3.8.4.jar                               Apache-2.0
-java/maven/lib/maven-builder-support-3.8.4.jar                        Apache-2.0
-java/maven/lib/maven-compat-3.8.4.jar                                 Apache-2.0
-java/maven/lib/maven-core-3.8.4.jar                                   Apache-2.0
-java/maven/lib/maven-embedder-3.8.4.jar                               Apache-2.0
-java/maven/lib/maven-model-3.8.4.jar                                  Apache-2.0
-java/maven/lib/maven-model-builder-3.8.4.jar                          Apache-2.0
-java/maven/lib/maven-plugin-api-3.8.4.jar                             Apache-2.0
-java/maven/lib/maven-repository-metadata-3.8.4.jar                    Apache-2.0
+java/maven/lib/maven-artifact-3.8.5.jar                               Apache-2.0
+java/maven/lib/maven-builder-support-3.8.5.jar                        Apache-2.0
+java/maven/lib/maven-compat-3.8.5.jar                                 Apache-2.0
+java/maven/lib/maven-core-3.8.5.jar                                   Apache-2.0
+java/maven/lib/maven-embedder-3.8.5.jar                               Apache-2.0
+java/maven/lib/maven-model-3.8.5.jar                                  Apache-2.0
+java/maven/lib/maven-model-builder-3.8.5.jar                          Apache-2.0
+java/maven/lib/maven-plugin-api-3.8.5.jar                             Apache-2.0
+java/maven/lib/maven-repository-metadata-3.8.5.jar                    Apache-2.0
 java/maven/lib/maven-resolver-api-1.6.3.jar                           Apache-2.0
 java/maven/lib/maven-resolver-connector-basic-1.6.3.jar               Apache-2.0
 java/maven/lib/maven-resolver-impl-1.6.3.jar                          Apache-2.0
-java/maven/lib/maven-resolver-provider-3.8.4.jar                      Apache-2.0
+java/maven/lib/maven-resolver-provider-3.8.5.jar                      Apache-2.0
 java/maven/lib/maven-resolver-spi-1.6.3.jar                           Apache-2.0
 java/maven/lib/maven-resolver-transport-wagon-1.6.3.jar               Apache-2.0
 java/maven/lib/maven-resolver-util-1.6.3.jar                          Apache-2.0
-java/maven/lib/maven-settings-3.8.4.jar                               Apache-2.0
-java/maven/lib/maven-settings-builder-3.8.4.jar                       Apache-2.0
+java/maven/lib/maven-settings-3.8.5.jar                               Apache-2.0
+java/maven/lib/maven-settings-builder-3.8.5.jar                       Apache-2.0
 java/maven/lib/maven-shared-utils-3.3.4.jar                           Apache-2.0
-java/maven/lib/maven-slf4j-provider-3.8.4.jar                         Apache-2.0
+java/maven/lib/maven-slf4j-provider-3.8.5.jar                         Apache-2.0
 java/maven/lib/org.eclipse.sisu.inject-0.3.5.jar                      Maven-EPL-v10
 java/maven/lib/org.eclipse.sisu.plexus-0.3.5.jar                      Maven-EPL-v10
 java/maven/lib/plexus-cipher-2.0.jar                                  Apache-2.0
@@ -521,45 +517,41 @@ java/maven/lib/plexus-interpolation-1.26.jar                          Apache-2.0
 java/maven/lib/plexus-sec-dispatcher-2.0.jar                          Apache-2.0
 java/maven/lib/plexus-utils-3.3.0.jar                                 Apache-2.0
 java/maven/lib/slf4j-api-1.7.32.jar                                   MIT-slf4j
-java/maven/lib/wagon-file-3.4.3.jar                                   Apache-2.0
-java/maven/lib/wagon-http-3.4.3-shaded.jar                            Apache-2.0
-java/maven/lib/wagon-provider-api-3.4.3.jar                           Apache-2.0
+java/maven/lib/wagon-file-3.5.1.jar                                   Apache-2.0
+java/maven/lib/wagon-http-3.5.1-shaded.jar                            Apache-2.0
+java/maven/lib/wagon-provider-api-3.5.1.jar                           Apache-2.0
 java/modules/ext/byte-buddy-1.10.6.jar                                Apache-2.0+BSD-INRIA
 java/modules/ext/cglib-2.2.jar                                        Apache-2.0
 java/modules/ext/checker-qual-3.9.1.jar                               MIT-checker
-java/modules/ext/commons-compress-1.20.jar                            Apache-2.0
 java/modules/ext/commons-io-2.5.jar                                   Apache-2.0
 java/modules/ext/corba/omgapi/glassfish-corba-omgapi.jar              CDDL-1.1
-java/modules/ext/discoclient-1.0.1.jar                                BSD-azul
-java/modules/ext/eclipselink/javax.persistence-2.2.1.jar              EPL-v10-eclipselink
-java/modules/ext/eclipselink/org.eclipse.persistence.antlr-2.7.9.jar  EPL-v10-eclipselink
-java/modules/ext/eclipselink/org.eclipse.persistence.asm-9.1.0.jar    EPL-v10-eclipselink
-java/modules/ext/eclipselink/org.eclipse.persistence.core-2.7.9.jar   EPL-v10-eclipselink
-java/modules/ext/eclipselink/org.eclipse.persistence.jpa-2.7.9.jar    EPL-v10-eclipselink
-java/modules/ext/eclipselink/org.eclipse.persistence.jpa.jpql-2.7.9.jar EPL-v10-eclipselink
-java/modules/ext/eclipselink/org.eclipse.persistence.jpa.modelgen.processor-2.7.9.jar EPL-v10-eclipselink
-java/modules/ext/eclipselink/org.eclipse.persistence.moxy-2.7.9.jar   EPL-v10-eclipselink
-java/modules/ext/httpclient5-5.0.3.jar                                Apache-2.0
-java/modules/ext/httpcore5-5.0.2.jar                                  Apache-2.0
-java/modules/ext/httpcore5-h2-5.0.2.jar                               Apache-2.0
+java/modules/ext/discoclient-2.0.23.jar                               Apache-2.0
+java/modules/ext/eclipselink/jakarta.persistence-2.2.3.jar            EPL-v10-eclipselink
+java/modules/ext/eclipselink/org.eclipse.persistence.antlr-2.7.10.jar EPL-v10-eclipselink
+java/modules/ext/eclipselink/org.eclipse.persistence.asm-9.2.0.jar    EPL-v10-eclipselink
+java/modules/ext/eclipselink/org.eclipse.persistence.core-2.7.10.jar  EPL-v10-eclipselink
+java/modules/ext/eclipselink/org.eclipse.persistence.jpa-2.7.10.jar   EPL-v10-eclipselink
+java/modules/ext/eclipselink/org.eclipse.persistence.jpa.jpql-2.7.10.jar EPL-v10-eclipselink
+java/modules/ext/eclipselink/org.eclipse.persistence.jpa.modelgen.processor-2.7.10.jar EPL-v10-eclipselink
+java/modules/ext/eclipselink/org.eclipse.persistence.moxy-2.7.10.jar  EPL-v10-eclipselink
 java/modules/ext/jaxws22/FastInfoset.jar                              Apache-2.0
-java/modules/ext/jaxws22/api/javax.annotation.jar                     CDDL-1.1
-java/modules/ext/jaxws22/api/jaxws-api.jar                            CDDL-1.1
-java/modules/ext/jaxws22/api/jsr181-api.jar                           CDDL-1.1
-java/modules/ext/jaxws22/api/saaj-api.jar                             CDDL-1.1
-java/modules/ext/jaxws22/gmbal-api-only.jar                           CDDL-1.0
-java/modules/ext/jaxws22/ha-api.jar                                   CDDL-1.0
-java/modules/ext/jaxws22/javax.mail_1.4.jar                           CDDL-1.0
-java/modules/ext/jaxws22/jaxws-rt.jar                                 CDDL-1.1
-java/modules/ext/jaxws22/jaxws-tools.jar                              CDDL-1.1
-java/modules/ext/jaxws22/management-api.jar                           CDDL-1.0
-java/modules/ext/jaxws22/mimepull.jar                                 CDDL-1.1
-java/modules/ext/jaxws22/policy.jar                                   CDDL-1.1
-java/modules/ext/jaxws22/saaj-impl.jar                                CDDL-1.1
-java/modules/ext/jaxws22/stax-ex.jar                                  CDDL-1.1
-java/modules/ext/jaxws22/stax2-api.jar                                BSD-woodstox
-java/modules/ext/jaxws22/streambuffer.jar                             CDDL-1.1
-java/modules/ext/jaxws22/woodstox-core-asl.jar                        Apache-2.0
+java/modules/ext/jaxws22/api/jakarta.jws-api.jar                      EDL-1.0
+java/modules/ext/jaxws22/api/jakarta.xml.soap-api.jar                 EDL-1.0
+java/modules/ext/jaxws22/api/jakarta.xml.ws-api.jar                   EDL-1.0
+java/modules/ext/jaxws22/gmbal-api-only.jar                           EDL-1.0
+java/modules/ext/jaxws22/ha-api.jar                                   EPL-v20
+java/modules/ext/jaxws22/jakarta.mail.jar                             EPL-v20
+java/modules/ext/jaxws22/jaxws-rt.jar                                 EDL-1.0
+java/modules/ext/jaxws22/jaxws-tools.jar                              EDL-1.0
+java/modules/ext/jaxws22/management-api.jar                           EDL-1.0
+java/modules/ext/jaxws22/mimepull.jar                                 EDL-1.0
+java/modules/ext/jaxws22/policy.jar                                   EDL-1.0
+java/modules/ext/jaxws22/saaj-impl.jar                                EDL-1.0
+java/modules/ext/jaxws22/stax-ex.jar                                  EDL-1.0
+java/modules/ext/jaxws22/stax2-api.jar                                BSD-stax2-api
+java/modules/ext/jaxws22/streambuffer.jar                             EDL-1.0
+java/modules/ext/jaxws22/woodstox-core.jar                            Apache-2.0
+java/modules/ext/jdktools-11.0.8.jar                                  Apache-2.0
 java/modules/ext/maven/indexer-core-6.0.0.jar                         Apache-2.0
 java/modules/ext/maven/javax.annotation-api-1.2.jar                   CDDL-1.1
 java/modules/ext/maven/jdom-1.0.jar                                   BSD-JDOM
@@ -568,8 +560,8 @@ java/modules/ext/maven/lucene-core-5.5.5.jar                          Apache-2.0
 java/modules/ext/maven/lucene-highlighter-5.5.5.jar                   Apache-2.0
 java/modules/ext/maven/lucene-queryparser-5.5.5.jar                   Apache-2.0
 java/modules/ext/maven/maven-dependency-tree-2.2.jar                  Apache-2.0
-java/modules/ext/nb-javac-jdk-17-api.jar                              GPL-2-CP
-java/modules/ext/nb-javac-jdk-17.jar                                  GPL-2-CP
+java/modules/ext/nb-javac-jdk-18-api.jar                              GPL-2-CP
+java/modules/ext/nb-javac-jdk-18.jar                                  GPL-2-CP
 java/modules/ext/org.eclipse.lsp4j-0.12.0.jar                         EPL-v20
 java/modules/ext/org.eclipse.lsp4j.debug-0.12.0.jar                   EPL-v20
 java/modules/ext/org.eclipse.lsp4j.generator-0.12.0.jar               EPL-v20
@@ -668,7 +660,7 @@ platform/modules/ext/batik-script-1.14.jar                            Apache-2.0
 platform/modules/ext/batik-svg-dom-1.14.jar                           Apache-2.0
 platform/modules/ext/batik-util-1.14.jar                              Apache-2.0
 platform/modules/ext/batik-xml-1.14.jar                               Apache-2.0
-platform/modules/ext/flatlaf-2.0.1.jar                                Apache-2.0
+platform/modules/ext/flatlaf-2.1.jar                                  Apache-2.0
 platform/modules/ext/hamcrest-core-1.3.jar                            BSD-hamcrest
 platform/modules/ext/jcommander-1.78.jar                              Apache-2.0
 platform/modules/ext/jna-5.9.0.jar                                    Apache-2.0
@@ -677,11 +669,12 @@ platform/modules/ext/junit-4.13.2.jar                                 EPL-v10
 platform/modules/ext/junit-jupiter-api-5.6.0.jar                      EPL-v20
 platform/modules/ext/junit-jupiter-engine-5.6.0.jar                   EPL-v20
 platform/modules/ext/junit-jupiter-params-5.6.0.jar                   EPL-v20
-platform/modules/ext/org.apache.felix.main-7.0.0.jar                  Apache-2.0
+platform/modules/ext/org.apache.felix.main-7.0.3.jar                  Apache-2.0
 platform/modules/ext/org.eclipse.osgi_3.9.1.nb9.jar                   OSGi
 platform/modules/ext/osgi.cmpn-7.0.0.jar                              Apache-2.0
 platform/modules/ext/osgi.core-8.0.0.jar                              Apache-2.0
 platform/modules/ext/testng-6.14.3.jar                                Apache-2.0+MIT+testng
+platform/modules/ext/xml-apis-1.4.01.jar                              Apache-2.0-XML-Commons-APIs
 platform/modules/ext/xml-apis-ext-1.3.04.jar                          Apache-2.0-XML-Commons-APIs
 platform/modules/ext/xmlgraphics-commons-2.6.jar                      Apache-2.0
 platform/modules/net-java-html-boot-fx.jar                            Apache-2.0
@@ -702,7 +695,7 @@ webcommon/jsstubs/corestubs.zip                                       BSD-ecmasc
 webcommon/jsstubs/domstubs.zip                                        W3C2
 webcommon/jsstubs/reststubs.zip                                       W3C2
 webcommon/modules/ext/dd-plist.jar                                    MIT-dd-plist
-webcommon/modules/ext/graal-js-parser-e20fe15.jar                     UPL
+webcommon/modules/ext/graaljs-parser-1.0.jar                          UPL
 webcommon/modules/ext/icu4j-67.1.jar                                  MIT-icu4j
 webcommon/modules/ext/js-20.3.0.jar                                   UPL
 webcommon/modules/ext/js-launcher-20.3.0.jar                          UPL
@@ -998,4 +991,3 @@ Notes
 
 Contributors:
 dmccann - December 22/2010 - 2.3 - Initial implementation
-
