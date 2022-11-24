@@ -1,11 +1,11 @@
-This installer installs Apache NetBeans 15 bundled with Azul's Zulu build of OpenJDK 18.
+This installer installs Apache NetBeans 16 bundled with Azul's Zulu build of OpenJDK 17.
 
 Apache NetBeans
 Copyright (c) 2017-2022 The Apache Software Foundation and distributed under the terms of the Apache Software License (below).
 
-Azul Zulu 18.32 (18.0.2+9)
+Azul Zulu 17.38 (17.0.5+8)
 Copyright (c) 2013-2022, Azul Systems, Inc. 385 Moffett Park Drive, Suite 115, Sunnyvale, CA 94089
-For more information see https://docs.azul.com/core/tpls/july-2022/zulu18_tpl.html
+For more information see https://docs.azul.com/core/tpls/october-2022/zulu17_tpl.html
 
 ===========================================================
 
@@ -446,6 +446,7 @@ ide/modules/ext/resolver-1.2.jar                                      Apache-2.0
 ide/modules/ext/salvation.jar                                         Apache-2.0
 ide/modules/ext/servlet-2.2.jar                                       Apache-1.1
 ide/modules/ext/snakeyaml-engine.jar                                  Apache-2.0
+ide/modules/ext/tomlj.jar                                             Apache-2.0
 ide/modules/ext/truffle-api-20.3.0.jar                                UPL
 ide/modules/ext/validator.jar                                         MIT-validator
 ide/modules/ext/webserver.jar                                         Apache-2.0
@@ -560,8 +561,8 @@ java/modules/ext/maven/lucene-core-8.11.1.jar                         Apache-2.0
 java/modules/ext/maven/lucene-highlighter-8.11.1.jar                  Apache-2.0
 java/modules/ext/maven/lucene-queryparser-8.11.1.jar                  Apache-2.0
 java/modules/ext/maven/maven-dependency-tree-2.2.jar                  Apache-2.0
-java/modules/ext/nb-javac-jdk-18-api.jar                              GPL-2-CP
-java/modules/ext/nb-javac-jdk-18.jar                                  GPL-2-CP
+java/modules/ext/nb-javac-jdk-19-api.jar                              GPL-2-CP
+java/modules/ext/nb-javac-jdk-19.jar                                  GPL-2-CP
 java/modules/ext/org.eclipse.lsp4j-0.13.0.jar                         EPL-v20
 java/modules/ext/org.eclipse.lsp4j.debug-0.13.0.jar                   EPL-v20
 java/modules/ext/org.eclipse.lsp4j.generator-0.13.0.jar               EPL-v20
@@ -660,7 +661,7 @@ platform/modules/ext/batik-script-1.14.jar                            Apache-2.0
 platform/modules/ext/batik-svg-dom-1.14.jar                           Apache-2.0
 platform/modules/ext/batik-util-1.14.jar                              Apache-2.0
 platform/modules/ext/batik-xml-1.14.jar                               Apache-2.0
-platform/modules/ext/flatlaf-2.4.jar                                  Apache-2.0
+platform/modules/ext/flatlaf-2.6.jar                                  Apache-2.0
 platform/modules/ext/hamcrest-core-1.3.jar                            BSD-hamcrest
 platform/modules/ext/jcommander-1.78.jar                              Apache-2.0
 platform/modules/ext/jna-5.12.1.jar                                   Apache-2.0
@@ -794,6 +795,24 @@ enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/web-fragment_
 enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/datatypes.dtd                                                        W3C2          
 enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/XMLSchema.dtd                                                        W3C2          
 enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/xml.xsd                                                              W3C2          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/bindingschema_3_0.xsd                                             EDL-1.0          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/application_9.mdd                                                 EPL-v20          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/application_9.xsd                                                 EPL-v20          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/application-client_9.mdd                                          EPL-v20          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/application-client_9.xsd                                          EPL-v20          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/connector_2_0.xsd                                                 EPL-v20          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/ejb-jar_4_0.mdd                                                   EPL-v20          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/ejb-jar_4_0.xsd                                                   EPL-v20          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/jakartaee_9.xsd                                                   EPL-v20          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/jakartaee_web_services_2_0.xsd                                    EPL-v20          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/jakartaee_web_services_client_2_0.xsd                             EPL-v20          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/jsp_3_0.xsd                                                       EPL-v20          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/permissions_9.xsd                                                 EPL-v20          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/web-app_5_0.mdd                                                   EPL-v20          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/web-app_5_0.xsd                                                   EPL-v20          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/web-common_5_0.xsd                                                EPL-v20          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/web-fragment_5_0.mdd                                              EPL-v20          
+enterprise/j2ee.dd/src/org/netbeans/modules/j2ee/dd/impl/resources/web-fragment_5_0.xsd                                              EPL-v20          
 enterprise/j2ee.dd.webservice/src/org/netbeans/modules/j2ee/dd/impl/resources/j2ee_1_4.xsd                                          CDDL-1.1          
 enterprise/j2ee.dd.webservice/src/org/netbeans/modules/j2ee/dd/impl/resources/j2ee_web_services_1_1.xsd                             CDDL-1.1          
 enterprise/j2ee.dd.webservice/src/org/netbeans/modules/j2ee/dd/impl/resources/j2ee_web_services_client_1_1.xsd                      CDDL-1.1          
@@ -867,6 +886,8 @@ enterprise/web.core/src/org/netbeans/modules/web/taglib/resources/web-jsptaglibr
 enterprise/web.core/src/org/netbeans/modules/web/taglib/resources/web-jsptaglibrary_2_0.xsd                                         CDDL-1.1          
 enterprise/web.core/src/org/netbeans/modules/web/taglib/resources/web-jsptaglibrary_2_1.xsd                                         CDDL-1.1          
 enterprise/web.core/src/org/netbeans/modules/web/taglib/resources/web-jsptaglibrary_2_1.mdd                                         CDDL-1.1          
+enterprise/web.core/src/org/netbeans/modules/web/taglib/resources/web-jsptaglibrary_3_0.xsd                                          EPL-v20         1
+enterprise/web.core/src/org/netbeans/modules/web/taglib/resources/web-jsptaglibrary_3_0.mdd                                          EPL-v20         1
 enterprise/web.jsf/src/org/netbeans/modules/web/jsf/resources/xml.xsd                                                                   W3C2          
 enterprise/web.jsf/src/org/netbeans/modules/web/jsf/resources/facelet-taglib_1_0.dtd                                                CDDL-1.1          
 enterprise/web.jsf/src/org/netbeans/modules/web/jsf/resources/javaee_5.xsd                                                          CDDL-1.1          
@@ -882,10 +903,13 @@ enterprise/web.jsf/src/org/netbeans/modules/web/jsf/resources/web-facesconfig_2_
 enterprise/web.jsf/src/org/netbeans/modules/web/jsf/resources/web-facesconfig_2_2.xsd                                               CDDL-1.1          
 enterprise/web.jsf/src/org/netbeans/modules/web/jsf/resources/web-facesconfig_2_3.xsd                                               CDDL-1.1          
 enterprise/web.jsf/src/org/netbeans/modules/web/jsf/resources/web-facesconfig_2_3.xsd                                               CDDL-1.1          
-enterprise/web.jsf/src/org/netbeans/modules/web/jsf/resources/web-facesconfig_3_0.xsd                                               CDDL-1.1          
+enterprise/web.jsf/src/org/netbeans/modules/web/jsf/resources/web-facelettaglibrary_3_0.xsd                                          EPL-v20          
+enterprise/web.jsf/src/org/netbeans/modules/web/jsf/resources/web-facesconfig_3_0.xsd                                                EPL-v20          
 enterprise/websvc.core/src/org/netbeans/modules/websvc/core/resources/sun-jaxws.xsd                                                 CDDL-1.0          
 enterprise/websvc.core/src/org/netbeans/modules/websvc/core/resources/javaee_web_services_metadata_handler_2_0.xsd                  CDDL-1.1          
 enterprise/websvc.core/src/org/netbeans/modules/websvc/core/resources/wsdl_customizationschema_2_0.xsd                              CDDL-1.1          
+enterprise/websvc.core/src/org/netbeans/modules/websvc/core/resources/jakartaee_web_services_metadata_handler_3_0.xsd                EDL-1.0         2
+enterprise/websvc.core/src/org/netbeans/modules/websvc/core/resources/wsdl_customizationschema_3_0.xsd                               EDL-1.0         2
 extide/gradle/src/org/netbeans/modules/gradle/resources/gradle-badge.png                                                         Gradle-icon          
 extide/gradle/src/org/netbeans/modules/gradle/resources/gradle-badge_dark.png                                                    Gradle-icon          
 extide/gradle/src/org/netbeans/modules/gradle/resources/gradle-large-badge.png                                                   Gradle-icon          
@@ -953,15 +977,25 @@ java/gradle.java/src/org/netbeans/modules/gradle/java/resources/javaseProjectIco
 java/gradle.java/src/org/netbeans/modules/gradle/java/resources/javaseProjectIcon_dark.png                                       Gradle-icon          
 java/j2ee.persistence/src/org/netbeans/modules/j2ee/persistence/dd/resources/orm_1_0.xsd                                            CDDL-1.0          
 java/j2ee.persistence/src/org/netbeans/modules/j2ee/persistence/dd/resources/persistence_1_0.xsd                                    CDDL-1.0          
-java/j2ee.persistence/src/org/netbeans/modules/j2ee/persistence/dd/resources/orm_2_0.xsd                                             EDL-1.0         1
-java/j2ee.persistence/src/org/netbeans/modules/j2ee/persistence/dd/resources/persistence_2_0.xsd                                     EDL-1.0         1
-java/j2ee.persistence/src/org/netbeans/modules/j2ee/persistence/dd/resources/orm_2_1.xsd                                             EDL-1.0         2
-java/j2ee.persistence/src/org/netbeans/modules/j2ee/persistence/dd/resources/persistence_2_1.xsd                                     EDL-1.0         2
-java/java.lsp.server/src/org/netbeans/modules/java/lsp/server/refactoring/ui/codicon.ttf                                                 MIT          
-java/java.lsp.server/src/org/netbeans/modules/java/lsp/server/refactoring/ui/codicon.css                                                 MIT          
+java/j2ee.persistence/src/org/netbeans/modules/j2ee/persistence/dd/resources/orm_2_0.xsd                                             EDL-1.0         3
+java/j2ee.persistence/src/org/netbeans/modules/j2ee/persistence/dd/resources/persistence_2_0.xsd                                     EDL-1.0         3
+java/j2ee.persistence/src/org/netbeans/modules/j2ee/persistence/dd/resources/orm_2_1.xsd                                             EDL-1.0         4
+java/j2ee.persistence/src/org/netbeans/modules/j2ee/persistence/dd/resources/persistence_2_1.xsd                                     EDL-1.0         4
+java/j2ee.persistence/src/org/netbeans/modules/j2ee/persistence/dd/resources/orm_2_2.xsd                                             EDL-1.0         5
+java/j2ee.persistence/src/org/netbeans/modules/j2ee/persistence/dd/resources/persistence_2_2.xsd                                     EDL-1.0         5
+java/j2ee.persistence/src/org/netbeans/modules/j2ee/persistence/dd/resources/orm_3_0.xsd                                             EDL-1.0         6
+java/j2ee.persistence/src/org/netbeans/modules/j2ee/persistence/dd/resources/persistence_3_0.xsd                                     EDL-1.0         6
 java/java.lsp.server/vscode/syntaxes/java.tmLanguage.json                                                                   MIT-java-grammar          
 java/junit.ui/src/org/netbeans/modules/junit/ui/resources/junit5-logo.png                                                            EPL-v20          
-java/xml.jaxb/src/org/netbeans/modules/xml/jaxb/resources/eclipselink_oxm_2_3.xsd                                                    EDL-1.0         3
+java/languages.antlr/src/org/antlr/parser/antlr3/ANTLRv3Lexer.g4                                                          BSD-antlr4-grammar          
+java/languages.antlr/src/org/antlr/parser/antlr3/ANTLRv3Parser.g4                                                         BSD-antlr4-grammar          
+java/languages.antlr/src/org/antlr/parser/antlr3/LexerAdaptor.java                                                        BSD-antlr4-grammar          
+java/languages.antlr/src/org/antlr/parser/antlr4/ANTLRv4Lexer.g4                                                          BSD-antlr4-grammar          
+java/languages.antlr/src/org/antlr/parser/antlr4/ANTLRv4Parser.g4                                                         BSD-antlr4-grammar          
+java/languages.antlr/src/org/antlr/parser/antlr4/LexBasic.g4                                                              BSD-antlr4-grammar          
+java/languages.antlr/src/org/antlr/parser/antlr4/LexerAdaptor.java                                                        BSD-antlr4-grammar          
+java/languages.antlr/src/org/netbeans/modules/languages/antlr/resources/antlr.png                                            BSD-antlr-icons          
+java/xml.jaxb/src/org/netbeans/modules/xml/jaxb/resources/eclipselink_oxm_2_3.xsd                                                    EDL-1.0         7
 nb/welcome/src/org/netbeans/modules/welcome/resources/xhtml1-transitional.dtd                                                           W3C2          
 nb/welcome/src/org/netbeans/modules/welcome/resources/xhtml-lat1.ent                                                                    W3C2          
 nb/welcome/src/org/netbeans/modules/welcome/resources/xhtml-special.ent                                                                 W3C2          
@@ -974,20 +1008,33 @@ websvccommon/websvc.saas.api/src/org/netbeans/modules/websvc/saas/model/wadl2009
 
 Notes
 -----
-[  1] Copyright (c) 2008, 2009 Sun Microsystems. All rights reserved.
+[  1] Copyright (c) 2009, 2020 Oracle and/or its affiliates. All rights reserved.
+
+[  2] Copyright (c) 2020 Oracle and/or its affiliates. All rights reserved.
+
+[  3] Copyright (c) 2008, 2009 Sun Microsystems. All rights reserved.
 
             Contributors:
             Linda DeMichiel - Java Persistence 2.0, Version 2.0 (October 1, 2009)
             Specification available from http://jcp.org/en/jsr/detail?id=317
 
-[  2] Copyright (c) 2008  - 2013 Oracle Corporation. All rights reserved. 
+[  4] Copyright (c) 2008  - 2013 Oracle Corporation. All rights reserved. 
 
             Contributors:
             Linda DeMichiel - Java Persistence 2.1, Version 2.1 (February 4, 2013)
             Specification available from http://jcp.org/en/jsr/detail?id=338
 
-[  3] Copyright (c) 1998, 2010 Oracle. All rights reserved.
+[  5] Copyright (c) 2008 - 2017 Oracle Corporation.  All rights reserved. 
+
+            Contributors:
+            Linda DeMichiel - Java Persistence 2.2, Version 2.2 (July 7, 2017)
+            Specification available from http://jcp.org/en/jsr/detail?id=338
+
+[  6] Copyright (c) 2008, 2020 Oracle and/or its affiliates. All rights reserved.
+
+[  7] Copyright (c) 1998, 2010 Oracle. All rights reserved.
 
 Contributors:
 dmccann - December 22/2010 - 2.3 - Initial implementation
+
 

@@ -35,7 +35,7 @@ the Azul provided hash. To use a different JDK, update the configuration file.
 Build the installer by running -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-14-bin.zip --config windows-x64-iss/netbeans-windows-x64.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-16-bin.zip --config windows-x64-iss/netbeans-windows-x64.properties --output dist/
 ```
 
 ### Build MacOS installer
@@ -51,7 +51,7 @@ configuration file.
 Build the installer by running -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-14-bin.zip --config macos-x64/netbeans-macos-x64.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-16-bin.zip --config macos-x64/netbeans-macos-x64.properties --output dist/
 ```
 
 ### Build DEB packages
@@ -60,14 +60,24 @@ You will require `fakeroot`, `dpkg` and `dpkg-deb` on the system. If building
 the `x64` package, download the right Azul Zulu JDK into the `linux-x64` directory
 and check against the provided hash file.
 
-The `all` architecture configuration in `linux-all` does not require any additional
-downloads and builds a DEB that runs on any architecture with the system JDK.
+Build the package by running eg. -
+
+```
+./nbpackage/bin/nbpackage --input netbeans-16-bin.zip --config linux-x64/netbeans-x64-deb.properties --output dist/
+```
+
+### Build RPM packages
+
+You will require `rpm` and `rpmbuild` on the system. If building the `x64` package,
+download the right Azul Zulu JDK into the `linux-x64` directory and check against the
+provided hash file.
 
 Build the package by running eg. -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-14-bin.zip --config linux-x64/netbeans-x64-deb.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-16-bin.zip --config linux-x64/netbeans-x64-rpm.properties --output dist/
 ```
+
 
 ### Build AppImages
 
@@ -85,7 +95,7 @@ hash.
 Build the AppImage by running eg. -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-14-bin.zip --config linux-arm32/netbeans-arm-appimage.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-16-bin.zip --config linux-arm32/netbeans-arm-appimage.properties --output dist/
 ```
 
 ## Legal
