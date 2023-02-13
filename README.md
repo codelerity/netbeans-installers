@@ -10,8 +10,9 @@ For more information see [https://www.codelerity.com/netbeans/](https://www.code
 This repository contains configuration files for building an Inno Setup Windows
 installer, Linux Deb packages (x64 / all), and Linux AppImages (x64 / Arm).
 
-Before starting, make a build of NBPackage inside an `nbpackage` directory (or
-download a [pre-release binary](https://github.com/neilcsmith-net/netbeans-tools/releases)).
+Before starting, download and unzip [nbpackage-1.0-beta2-bin](https://archive.apache.org/dist/netbeans/netbeans-nbpackage/1.0-beta2/nbpackage-1.0-beta2-bin.zip)
+into an `nbpackage` directory. Executing `./nbpackage/bin/nbpackage --help` should show
+the help text for the packager.
 
 Download a copy of the official Apache NetBeans binary zip release, and check against
 the hash file in the repository.
@@ -27,7 +28,7 @@ You will require an installation of Inno Setup from [https://jrsoftware.org/isdl
 
 The configuration files here are designed to build on Linux via an installation of
 Inno Setup in Wine. Tweak the configuration file to point to the right place if building
-on Windows.
+on Windows, and use `nbpackage.bat`.
 
 Download the right Azul Zulu JDK into the `windows-x64-iss` directory, checking against
 the Azul provided hash. To use a different JDK, update the configuration file.
@@ -35,7 +36,7 @@ the Azul provided hash. To use a different JDK, update the configuration file.
 Build the installer by running -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-16-bin.zip --config windows-x64-iss/netbeans-windows-x64.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-17-bin.zip --config windows-x64-iss/netbeans-windows-x64.properties --output dist/
 ```
 
 ### Build MacOS installer
@@ -51,7 +52,7 @@ configuration file.
 Build the installer by running -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-16-bin.zip --config macos-x64/netbeans-macos-x64.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-17-bin.zip --config macos-x64/netbeans-macos-x64.properties --output dist/
 ```
 
 ### Build DEB packages
@@ -63,7 +64,7 @@ and check against the provided hash file.
 Build the package by running eg. -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-16-bin.zip --config linux-x64/netbeans-x64-deb.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-17-bin.zip --config linux-x64/netbeans-x64-deb.properties --output dist/
 ```
 
 ### Build RPM packages
@@ -75,7 +76,7 @@ provided hash file.
 Build the package by running eg. -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-16-bin.zip --config linux-x64/netbeans-x64-rpm.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-17-bin.zip --config linux-x64/netbeans-x64-rpm.properties --output dist/
 ```
 
 
@@ -88,14 +89,14 @@ Download the x64 or Arm executable of [AppImageKit](https://github.com/AppImage/
 into the relevant directory, checking against the provided hash. AppImageKit is itself
 an AppImage - make sure to mark it executable before continuing.
 
-The x64 AppImage will use the same JDK as the DEB above. For Arm (Raspberry Pi)
+The x64 AppImage will use the same JDK as the DEB and RPM above. For Arm (Raspberry Pi)
 download the relevant BellSoft Liberica JDK and check against BellSoft's provided
 hash.
 
 Build the AppImage by running eg. -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-16-bin.zip --config linux-arm32/netbeans-arm-appimage.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-17-bin.zip --config linux-arm32/netbeans-arm-appimage.properties --output dist/
 ```
 
 ## Legal
