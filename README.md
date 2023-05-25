@@ -36,7 +36,7 @@ the Azul provided hash. To use a different JDK, update the configuration file.
 Build the installer by running -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-17-bin.zip --config windows-x64-iss/netbeans-windows-x64.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-18-bin.zip --config windows-x64-iss/netbeans-windows-x64.properties --output dist/
 ```
 
 ### Build MacOS installer
@@ -52,7 +52,7 @@ configuration file.
 Build the installer by running -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-17-bin.zip --config macos-x64/netbeans-macos-x64.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-18-bin.zip --config macos-x64/netbeans-macos-x64.properties --output dist/
 ```
 
 ### Build DEB packages
@@ -64,7 +64,7 @@ and check against the provided hash file.
 Build the package by running eg. -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-17-bin.zip --config linux-x64/netbeans-x64-deb.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-18-bin.zip --config linux-x64/netbeans-x64-deb.properties --output dist/
 ```
 
 ### Build RPM packages
@@ -76,7 +76,7 @@ provided hash file.
 Build the package by running eg. -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-17-bin.zip --config linux-x64/netbeans-x64-rpm.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-18-bin.zip --config linux-x64/netbeans-x64-rpm.properties --output dist/
 ```
 
 
@@ -96,7 +96,7 @@ hash.
 Build the AppImage by running eg. -
 
 ```
-./nbpackage/bin/nbpackage --input netbeans-17-bin.zip --config linux-arm32/netbeans-arm-appimage.properties --output dist/
+./nbpackage/bin/nbpackage --input netbeans-18-bin.zip --config linux-arm32/netbeans-arm-appimage.properties --output dist/
 ```
 
 ## Legal
