@@ -1,9 +1,9 @@
-This installer installs Apache NetBeans 23 bundled with Azul's Zulu build of OpenJDK 23.
+This installer installs Apache NetBeans 24 bundled with Azul's Zulu build of OpenJDK 23.
 
 Apache NetBeans
 Copyright (c) 2017-2024 The Apache Software Foundation and distributed under the terms of the Apache Software License (below).
 
-Azul Zulu 23.28.85 (23.0.0+37)
+Azul Zulu 23.30.13 (23.0.1+11)
 Copyright (c) 2013-2024, Azul Systems, Inc. 385 Moffett Park Drive, Suite 115, Sunnyvale, CA 94089
 For more information see https://docs.azul.com/core/release-notes
 
