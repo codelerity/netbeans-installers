@@ -1,4 +1,6 @@
-# Apache NetBeans installers
+# Apache NetBeans installers (archive)
+
+**These installers have moved to [https://installers.friendsofapachenetbeans.org/](https://installers.friendsofapachenetbeans.org/)**
 
 NBPackage configuration and build files for the Codelerity / Gj IT installers for
 [Apache NetBeans](https://netbeans.apache.org).
